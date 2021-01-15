@@ -1,0 +1,60 @@
+body {
+    background: #ddd;
+    font-family: monospace;
+}
+
+.contenedor_tabla{
+    width: 90%;
+    background: white;
+    margin: 50px auto;
+    box-shadow: 0 0 20px #333;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 40px;
+    
+    position: relative;
+}
+
+.tabla_titulo{
+    grid-column-start: 1;
+    grid-column-end:  5;
+    
+    background: rgba(40,65,120,1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.9em;
+}
+
+.tabla_header, .tabla_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tabla_header{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.tabla_input {
+    display: block;
+    padding-left: 15px;
+    
+}
+
+.contenedor_submit{
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: .9em;
+    cursor: pointer;
+    background: rgb(178, 34, 34);
+    color: white;
+    
+}
